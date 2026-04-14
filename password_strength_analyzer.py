@@ -17,8 +17,9 @@ def check_password_strength(password):
     elif strength == 3:
         return "Medium"
     else:
-        return "Weak"
-        print("Suggestion: Use uppercase, numbers, and special characters")
+        return """Weak
+        Suggestion: Use uppercase, numbers, and special characters"""
+
 
 password = input("Enter password: ")
 print("Strength:", check_password_strength(password))
